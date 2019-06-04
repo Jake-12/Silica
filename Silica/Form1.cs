@@ -42,5 +42,9 @@ namespace Silica
                 MessageBox.Show("Error, Could not Locate Console!"); //This can be due to Neighborhood not installed, or JRPC2 not set as a plugin. 
             }
         }
+
+        private void simpleButton2_Click(object sender, EventArgs e){
+            xbox.XNotify(" " + notify);
+        }
     }
 }

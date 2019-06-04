@@ -28,7 +28,6 @@
         /// </summary>
         private void InitializeComponent()
         {
-
             this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
             this.barManager1 = new DevExpress.XtraBars.BarManager(this.components);
@@ -41,32 +40,32 @@
             this.barDockControlRight = new DevExpress.XtraBars.BarDockControl();
             this.barButtonItem1 = new DevExpress.XtraBars.BarButtonItem();
             this.xtraTabControl1 = new DevExpress.XtraTab.XtraTabControl();
-            this.xtraTabPage1 = new DevExpress.XtraTab.XtraTabPage();
             this.xtraTabPage2 = new DevExpress.XtraTab.XtraTabPage();
-            this.simpleButton1 = new DevExpress.XtraEditors.SimpleButton();
-            this.label1 = new System.Windows.Forms.Label();
-            this.textEdit1 = new DevExpress.XtraEditors.TextEdit();
-            this.textEdit2 = new DevExpress.XtraEditors.TextEdit();
-            this.textEdit3 = new DevExpress.XtraEditors.TextEdit();
+            this.xtraTabPage1 = new DevExpress.XtraTab.XtraTabPage();
+            this.label4 = new System.Windows.Forms.Label();
+            this.notify = new DevExpress.XtraEditors.SimpleButton();
+            this.label3 = new System.Windows.Forms.Label();
+            this.textEdit7 = new DevExpress.XtraEditors.TextEdit();
+            this.label2 = new System.Windows.Forms.Label();
             this.textEdit4 = new DevExpress.XtraEditors.TextEdit();
             this.textEdit5 = new DevExpress.XtraEditors.TextEdit();
             this.textEdit6 = new DevExpress.XtraEditors.TextEdit();
-            this.label2 = new System.Windows.Forms.Label();
-            this.textEdit7 = new DevExpress.XtraEditors.TextEdit();
-            this.label3 = new System.Windows.Forms.Label();
-            this.simpleButton2 = new DevExpress.XtraEditors.SimpleButton();
-            this.label4 = new System.Windows.Forms.Label();
+            this.textEdit3 = new DevExpress.XtraEditors.TextEdit();
+            this.textEdit2 = new DevExpress.XtraEditors.TextEdit();
+            this.textEdit1 = new DevExpress.XtraEditors.TextEdit();
+            this.label1 = new System.Windows.Forms.Label();
+            this.simpleButton1 = new DevExpress.XtraEditors.SimpleButton();
             ((System.ComponentModel.ISupportInitialize)(this.barManager1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.xtraTabControl1)).BeginInit();
             this.xtraTabControl1.SuspendLayout();
             this.xtraTabPage1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.textEdit1.Properties)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.textEdit2.Properties)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.textEdit3.Properties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.textEdit7.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.textEdit4.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.textEdit5.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.textEdit6.Properties)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.textEdit7.Properties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.textEdit3.Properties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.textEdit2.Properties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.textEdit1.Properties)).BeginInit();
             this.SuspendLayout();
             // 
             // barManager1
@@ -160,10 +159,16 @@
             this.xtraTabPage1,
             this.xtraTabPage2});
             // 
+            // xtraTabPage2
+            // 
+            this.xtraTabPage2.Name = "xtraTabPage2";
+            this.xtraTabPage2.Size = new System.Drawing.Size(929, 401);
+            this.xtraTabPage2.Text = "Black Ops II";
+            // 
             // xtraTabPage1
             // 
             this.xtraTabPage1.Controls.Add(this.label4);
-            this.xtraTabPage1.Controls.Add(this.simpleButton2);
+            this.xtraTabPage1.Controls.Add(this.notify);
             this.xtraTabPage1.Controls.Add(this.label3);
             this.xtraTabPage1.Controls.Add(this.textEdit7);
             this.xtraTabPage1.Controls.Add(this.label2);
@@ -179,57 +184,50 @@
             this.xtraTabPage1.Size = new System.Drawing.Size(929, 401);
             this.xtraTabPage1.Text = "Home";
             // 
-            // xtraTabPage2
+            // label4
             // 
-            this.xtraTabPage2.Name = "xtraTabPage2";
-            this.xtraTabPage2.Size = new System.Drawing.Size(929, 401);
-            this.xtraTabPage2.Text = "Black Ops II";
+            this.label4.AutoSize = true;
+            this.label4.Location = new System.Drawing.Point(861, 383);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(65, 13);
+            this.label4.TabIndex = 12;
+            this.label4.Text = "Version: 1.0";
             // 
-            // simpleButton1
+            // notify
             // 
-            this.simpleButton1.Location = new System.Drawing.Point(353, 337);
-            this.simpleButton1.Name = "simpleButton1";
-            this.simpleButton1.Size = new System.Drawing.Size(173, 35);
-            this.simpleButton1.TabIndex = 0;
-            this.simpleButton1.Text = "Connect to Console";
-            this.simpleButton1.Click += new System.EventHandler(this.simpleButton1_Click);
+            this.notify.Location = new System.Drawing.Point(724, 155);
+            this.notify.Name = "notify";
+            this.notify.Size = new System.Drawing.Size(117, 23);
+            this.notify.TabIndex = 11;
+            this.notify.Text = "Send xNotify";
+            this.notify.Click += new System.EventHandler(this.simpleButton2_Click);
             // 
-            // label1
+            // label3
             // 
-            this.label1.AutoSize = true;
-            this.label1.ForeColor = System.Drawing.Color.Red;
-            this.label1.Location = new System.Drawing.Point(381, 383);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(109, 13);
-            this.label1.TabIndex = 1;
-            this.label1.Text = "Status: Disconnected";
+            this.label3.AutoSize = true;
+            this.label3.Location = new System.Drawing.Point(720, 103);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(121, 13);
+            this.label3.TabIndex = 10;
+            this.label3.Text = "Send Notify to Console:";
             // 
-            // textEdit1
+            // textEdit7
             // 
-            this.textEdit1.EditValue = "Kernal Version: ";
-            this.textEdit1.Location = new System.Drawing.Point(11, 100);
-            this.textEdit1.MenuManager = this.barManager1;
-            this.textEdit1.Name = "textEdit1";
-            this.textEdit1.Size = new System.Drawing.Size(338, 20);
-            this.textEdit1.TabIndex = 2;
+            this.textEdit7.EditValue = "Text Here ";
+            this.textEdit7.Location = new System.Drawing.Point(686, 126);
+            this.textEdit7.MenuManager = this.barManager1;
+            this.textEdit7.Name = "textEdit7";
+            this.textEdit7.Size = new System.Drawing.Size(202, 20);
+            this.textEdit7.TabIndex = 9;
             // 
-            // textEdit2
+            // label2
             // 
-            this.textEdit2.EditValue = "CPU Key: ";
-            this.textEdit2.Location = new System.Drawing.Point(11, 126);
-            this.textEdit2.MenuManager = this.barManager1;
-            this.textEdit2.Name = "textEdit2";
-            this.textEdit2.Size = new System.Drawing.Size(338, 20);
-            this.textEdit2.TabIndex = 3;
-            // 
-            // textEdit3
-            // 
-            this.textEdit3.EditValue = "CPU Temperature: ";
-            this.textEdit3.Location = new System.Drawing.Point(11, 152);
-            this.textEdit3.MenuManager = this.barManager1;
-            this.textEdit3.Name = "textEdit3";
-            this.textEdit3.Size = new System.Drawing.Size(338, 20);
-            this.textEdit3.TabIndex = 4;
+            this.label2.AutoSize = true;
+            this.label2.Location = new System.Drawing.Point(116, 72);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(108, 13);
+            this.label2.TabIndex = 8;
+            this.label2.Text = "Console Information:";
             // 
             // textEdit4
             // 
@@ -258,49 +256,51 @@
             this.textEdit6.Size = new System.Drawing.Size(338, 20);
             this.textEdit6.TabIndex = 5;
             // 
-            // label2
+            // textEdit3
             // 
-            this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(116, 72);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(108, 13);
-            this.label2.TabIndex = 8;
-            this.label2.Text = "Console Information:";
+            this.textEdit3.EditValue = "CPU Temperature: ";
+            this.textEdit3.Location = new System.Drawing.Point(11, 152);
+            this.textEdit3.MenuManager = this.barManager1;
+            this.textEdit3.Name = "textEdit3";
+            this.textEdit3.Size = new System.Drawing.Size(338, 20);
+            this.textEdit3.TabIndex = 4;
             // 
-            // textEdit7
+            // textEdit2
             // 
-            this.textEdit7.EditValue = "Text Here ";
-            this.textEdit7.Location = new System.Drawing.Point(686, 126);
-            this.textEdit7.MenuManager = this.barManager1;
-            this.textEdit7.Name = "textEdit7";
-            this.textEdit7.Size = new System.Drawing.Size(202, 20);
-            this.textEdit7.TabIndex = 9;
+            this.textEdit2.EditValue = "CPU Key: ";
+            this.textEdit2.Location = new System.Drawing.Point(11, 126);
+            this.textEdit2.MenuManager = this.barManager1;
+            this.textEdit2.Name = "textEdit2";
+            this.textEdit2.Size = new System.Drawing.Size(338, 20);
+            this.textEdit2.TabIndex = 3;
             // 
-            // label3
+            // textEdit1
             // 
-            this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(720, 103);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(121, 13);
-            this.label3.TabIndex = 10;
-            this.label3.Text = "Send Notify to Console:";
+            this.textEdit1.EditValue = "Kernal Version: ";
+            this.textEdit1.Location = new System.Drawing.Point(11, 100);
+            this.textEdit1.MenuManager = this.barManager1;
+            this.textEdit1.Name = "textEdit1";
+            this.textEdit1.Size = new System.Drawing.Size(338, 20);
+            this.textEdit1.TabIndex = 2;
             // 
-            // simpleButton2
+            // label1
             // 
-            this.simpleButton2.Location = new System.Drawing.Point(724, 155);
-            this.simpleButton2.Name = "simpleButton2";
-            this.simpleButton2.Size = new System.Drawing.Size(117, 23);
-            this.simpleButton2.TabIndex = 11;
-            this.simpleButton2.Text = "Send xNotify";
+            this.label1.AutoSize = true;
+            this.label1.ForeColor = System.Drawing.Color.Red;
+            this.label1.Location = new System.Drawing.Point(381, 383);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(109, 13);
+            this.label1.TabIndex = 1;
+            this.label1.Text = "Status: Disconnected";
             // 
-            // label4
+            // simpleButton1
             // 
-            this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(861, 383);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(65, 13);
-            this.label4.TabIndex = 12;
-            this.label4.Text = "Version: 1.0";
+            this.simpleButton1.Location = new System.Drawing.Point(353, 337);
+            this.simpleButton1.Name = "simpleButton1";
+            this.simpleButton1.Size = new System.Drawing.Size(173, 35);
+            this.simpleButton1.TabIndex = 0;
+            this.simpleButton1.Text = "Connect to Console";
+            this.simpleButton1.Click += new System.EventHandler(this.simpleButton1_Click);
             // 
             // Form1
             // 
@@ -322,13 +322,13 @@
             this.xtraTabControl1.ResumeLayout(false);
             this.xtraTabPage1.ResumeLayout(false);
             this.xtraTabPage1.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.textEdit1.Properties)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.textEdit2.Properties)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.textEdit3.Properties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.textEdit7.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.textEdit4.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.textEdit5.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.textEdit6.Properties)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.textEdit7.Properties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.textEdit3.Properties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.textEdit2.Properties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.textEdit1.Properties)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -358,7 +358,7 @@
         private DevExpress.XtraEditors.SimpleButton simpleButton1;
         private DevExpress.XtraTab.XtraTabPage xtraTabPage2;
         private System.Windows.Forms.Label label4;
-        private DevExpress.XtraEditors.SimpleButton simpleButton2;
+        private DevExpress.XtraEditors.SimpleButton notify;
         private System.Windows.Forms.Label label3;
         private DevExpress.XtraEditors.TextEdit textEdit7;
     }
