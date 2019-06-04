@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+
             this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
             this.barManager1 = new DevExpress.XtraBars.BarManager(this.components);
@@ -191,6 +192,7 @@
             this.simpleButton1.Size = new System.Drawing.Size(173, 35);
             this.simpleButton1.TabIndex = 0;
             this.simpleButton1.Text = "Connect to Console";
+            this.simpleButton1.Click += new System.EventHandler(this.simpleButton1_Click);
             // 
             // label1
             // 
